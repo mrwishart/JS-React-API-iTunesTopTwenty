@@ -1,11 +1,7 @@
 import React from 'react';
 
 function CurrentlyPlaying({currentSong}){
-  if (!currentSong) {
-    return(
-    null
-  );
-  }
+  if (!currentSong) {return null;}
   else {
   return (
     <footer>

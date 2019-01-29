@@ -58,3 +58,20 @@ audio {
   height: 20px;
   width: 400px;
 }
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+tr:nth-child(odd){
+  background-color: #dbeaf9;
+}
+
+thead {
+  background-color: #cbeaf9
+}
+
+tr a {
+  text-decoration: none;
+  font-weight: 500;
+}
