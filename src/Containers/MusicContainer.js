@@ -9,6 +9,7 @@ class MusicContainer extends Component{
       songs: [],
       currentSong: null
     };
+    this.handleSetPreview = this.handleSetPreview.bind(this);
   }
 
   componentDidMount(){
@@ -25,11 +26,15 @@ class MusicContainer extends Component{
     request.send();
   }
 
+  handleSetPreview(songId){
+    this.setState({currentSong: this.state.songs[songId]});
+  }
+
   render(){
     return(
       <>
+      <SongList songs={this.state.songs} previewButton={this.handleSetPreview} />
       <CurrentlyPlaying currentSong={this.state.currentSong}/>
-      <SongList songs={this.state.songs} />
       </>
     );
   }

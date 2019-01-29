@@ -35,4 +35,26 @@ th{
 
 table {
   border-spacing: 0px;
+  margin-bottom: 65px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 65px;
+  width: 100%;
+  background-color: grey;
+  opacity: 0.9;
+  text-align: center;
+}
+
+footer p {
+  margin: 0px;
+  padding: 8px;
+}
+
+audio {
+  height: 20px;
+  width: 400px;
 }

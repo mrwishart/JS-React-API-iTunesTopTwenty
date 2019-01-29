@@ -8,7 +8,7 @@ function SongListHeader(props){
     <th>Title</th>
     <th>Artist</th>
     <th>Genre</th>
-    <th>Preview</th>
+    <th>Preview?</th>
     </tr>
   </thead>);
 }
